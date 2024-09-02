@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/loading.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/keyframes.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="/css/input.css">
+    <link rel="stylesheet" href="/css/baseResponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>VÉ XE BUS</title>
+</head>
+<body>
+
+    <div class="loading">
+        <div class="overloading">
+            <div class="loading-body">
+                <div class="spinner">                
+                </div>
+                <div class="content">
+                    Xin chào...
+                </div>
+            </div>        
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="head__left-resposive">
+            <div class="image">
+                <img src="/img/logoWeb.png" width="150px">
+            </div>
+            <div class="title">Dẫn đầu chất lượng</div>
+        </div>
+
+        <div class="head flex">
+           <div class="head_left flex">
+            <!-- <div class="buttonScreen">
+                <div class="sun"><i class="fa-solid fa-sun"></i></div>
+                <div class="btn"></div>
+               
+                <div class="moon"><i class="fa-solid fa-moon"></i></div>
+                <div class="cicle">
+                    <div class="cicle-item"></div>
+                </div>
+            </div> -->
+                <div></div>
+                <ul class="flex">
+                    <li><img src="/img/flag_vn.png" alt="icon" width="50px"></li>
+                    <li>VI</li>
+                    <li><i class="fa-solid fa-chevron-down"></i></li> 
+                    <li>
+                        <ul class="languages">
+                            <li>
+                                <img src="/img/flag_vn.png" alt="" width="50px">
+                                <p>VI</p>
+                            </li>
+                            <li>
+                                <img src="/img/flag_anh.webp" alt="" width="38px">
+                                <p>EN</p>
+                            </li>
+                        </ul> 
+                    </li>  
+                </ul>             
+
+                <ul class="download flex">
+                    <li><a href=""><i class="fa-regular fa-circle-down" style="font-size: 1.2rem"></i></a></li>
+                    <li><a href="">Tải ứng dụng</a></li>
+                </ul>
+           </div>
+
+           <div class="head_center">
+                <div class="logo">
+                    <img src="/img/logoWeb.png" alt="" width="150px">
+                </div>
+           </div>
+
+           <ul class="head_right flex">
+                <li><a href="#"><i class="fa-solid fa-question"></i>Trợ giúp</a></li>
+                <li><a href="#">Đăng nhập</a></li>
+                <li><a href="#">Đăng ký</a></li>
+           </ul>
+
+           <div class="navbar">
+            <i class="fa-solid fa-bars"></i>
+           </div>
+        </div>
+        <nav>
+            <ul class="menu flex">
+                <li><a href="/html/index.html"  style="color: var(--white-color);"><i class="fa-solid fa-house"></i>Trang Chủ</a></li>
+                <li><a href="/html/schedule.html">Lịch Trình</a></li>
+                <li><a href="/html/checkTicket.html">Dịch vụ vé</a></li>
+                <li><a href="/html/news.html">Tin tức</a></li>          
+                <li><a href="/html/AboutUs.html">Về chúng tôi</a></li>
+                <li><a href="/html/contact.html">Liên hệ</a></li>
+                <li>
+                    <a href="#">Khác <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="submenu">
+                       <li><a href="/html/comboSave.html">Combo tiết kiệm</a></li>
+                       <li><a href="/html/insurance.html">Bảo hiểm du lịch</a></li>
+                       
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <aside>
+            <div class="img_aside">
+                <div class="form_img">
+                    <img src="/img/web.png" class="img_offical" alt="">
+                    <div class="image">
+                        <img src="/img/muontain_offical.png" alt="">
+                        <img src="/img/bus_khong_nen.png" >
+                    </div>  
+                                
+                </div>                 
+            </div>           
+        </aside>
+
+        <div class="header_after"></div>
+    </header>
+
+    <main class="element home">
+        <div class="" id="home">
+            <div class="form__find-ride wow animate__fadeInLeft">
+                <div class="form__find_list">
+                    <div class="form__find-head">
+                        <ul>
+                            <li>
+                                <input type="radio" name="check_1" value="" checked/>
+                                <p class="ticketType">Một chiều</p>                    
+                            </li>
+                            <li>
+                                <input type="radio" name="check_1" value="" />
+                                <p class="ticketType">Khứ hồi</p>
+                            </li>
+                            <li>
+                                <p><a href="">Hướng dẫn mua vé</a></p>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="form__find-information">
+                        <ul class="input-province">
+                            <li>
+                                <p>Điểm đi</p>
+                                <div class="input_point">
+                                    <i class="fa-solid fa-location-dot" style="color: red;"></i>
+                                    <p>Quảng Nam</p>
+                                    <ul class="province">
+                                        <li>Hà Nội</li>
+                                        <li>Đà Nẵng</li>
+                                        <li>Đà Lạt</li>
+                                        <li>Quảng Nam</li>
+                                        <li>Hà Tĩnh</li>
+                                        <li>Nghệ An</li>
+                                        <li>Quảng Ngãi</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <div class="icon_change">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </div>                    
+                        </ul>
+                        
+                        <ul class="input-province">
+                            <li>
+                                <p>Điểm đến</p>
+                                <div class="input_point">
+                                    <i class="fa-solid fa-location-dot" style="color: blue;"></i>
+                                    <p>TP. Hồ Chí Minh</p>
+                                    <ul class="province">
+                                        <li>Hà Nội</li>
+                                        <li>Đà Nẵng</li>
+                                        <li>Đà Lạt</li>
+                                        <li>Quảng Nam</li>
+                                        <li>Hà Tĩnh</li>
+                                        <li>Nghệ An</li>
+                                        <li>Quảng Ngãi</li>
+                                    </ul>
+                                </div>
+                            </li>                       
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <p>Ngày đi</p>
+                                <div class="input_point time">
+                                    <i class="fa-solid fa-calendar-days" style="color: var(--primary-color);"></i>
+                                    <p>01/09/2024</p>
+                                </div>
+                            </li>
+        <!-- DEPATURE DATE -->
+                            <div class="form__date-body">
+                                <div class="form__date-title">
+                                    <p>Depature date</p>
+                                </div>
+                                <div class="selected-time">
+                                    <div class="selected__time-item">
+                                        01/09/2024
+                                    </div>
+                                </div>
+                                <div class="selected__time-title">SEPTEMBER/2024</div>
+                                <form action="" class="table_calendar">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td>Mo</td>
+                                                <td>Tu</td>
+                                                <td>We</td>
+                                                <td>Th</td>
+                                                <td>Fr</td>
+                                                <td>Sa</td>
+                                                <td>Su</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>                    
+                                            <tr>
+                                                <td>
+                                                <span>
+                                                    23/7
+                                                </span> 26
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    24
+                                                </span> 27
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    25
+                                                </span> 28
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    26
+                                                </span> 29
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    27
+                                                </span> 30
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    28
+                                                </span> 31
+                                                </td>
+
+                                                <td style="background-color: rgb(244, 148, 148);">
+                                                    
+                                                <span>
+                                                    29
+                                                </span> 1
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <span>
+                                                    30
+                                                </span> 2
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    1/8
+                                                </span> 3
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    2
+                                                </span> 4
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    3
+                                                </span> 5
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    4
+                                                </span> 6
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    5
+                                                </span> 7
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    6
+                                                </span> 8
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <span>
+                                                    7
+                                                </span> 9
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    8
+                                                </span> 10
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    9
+                                                </span> 11
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    10
+                                                </span> 12
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    11
+                                                </span> 13
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    12
+                                                </span> 14
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    13
+                                                </span> 15
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <span>
+                                                    14
+                                                </span> 16
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    15
+                                                </span> 17
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    16
+                                                </span> 18
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    17
+                                                </span> 19
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    18
+                                                </span> 20
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    19
+                                                </span> 21
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    20
+                                                </span> 22
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <span>
+                                                    21
+                                                </span> 23
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    22
+                                                </span> 24
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    23
+                                                </span> 25
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    24
+                                                </span> 26
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    25
+                                                </span> 27
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    26
+                                                </span> 28
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    27
+                                                </span> 29
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <span>
+                                                    28
+                                                </span> 30
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    29
+                                                </span> 1
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    30
+                                                </span> 2
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    1/9
+                                                </span> 3
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    2
+                                                </span> 4
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    3
+                                                </span> 5
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    4
+                                                </span> 6
+                                                </td>
+
+                                            </tr>
+                                        </tbody>                
+                                    </table>
+                                </form>
+                            </div>
+                        </ul>
+                        <ul class ="one_way ">
+                             <li>
+                                <p>Số vé</p>
+                                <div class="input_point">
+                                    <p>1</p>
+                                    <p><i class="fa-solid fa-caret-down"></i></p>
+                                </div>
+                            </li>                                    
+                            <li>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul class ="two_way hidden">
+                            <li>
+                                <p>Ngày về</p>
+                                <div class="input_point">
+                                    <i class="fa-solid fa-calendar-days" style="color: var(--primary-color);"></i>
+                                    <p>01/09/2024</p>
+                                </div>
+                            </li>
+
+                            <div class="form__date-body">
+                                <div class="form__date-title">
+                                    <p>Return date</p>
+                                </div>
+                                <div class="selected-time">
+                                    <div class="selected__time-item">
+                                        01/09/2024
+                                    </div>
+                                </div>
+                                <div class="selected__time-title">SEPTEMBER/2024</div>
+                                <form action="" class="table_calendar">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td>Mo</td>
+                                                <td>Tu</td>
+                                                <td>We</td>
+                                                <td>Th</td>
+                                                <td>Fr</td>
+                                                <td>Sa</td>
+                                                <td>Su</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>                    
+                                            <tr>
+                                                <td>
+                                                <span>
+                                                    23/7
+                                                </span> 26
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    24
+                                                </span> 27
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    25
+                                                </span> 28
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    26
+                                                </span> 29
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    27
+                                                </span> 30
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    28
+                                                </span> 31
+                                                </td>
+
+                                                <td style="background-color: rgb(244, 148, 148);">
+                                                    
+                                                <span>
+                                                    29
+                                                </span> 1
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <span>
+                                                    30
+                                                </span> 2
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    1/8
+                                                </span> 3
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    2
+                                                </span> 4
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    3
+                                                </span> 5
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    4
+                                                </span> 6
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    5
+                                                </span> 7
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    6
+                                                </span> 8
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <span>
+                                                    7
+                                                </span> 9
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    8
+                                                </span> 10
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    9
+                                                </span> 11
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    10
+                                                </span> 12
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    11
+                                                </span> 13
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    12
+                                                </span> 14
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    13
+                                                </span> 15
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <span>
+                                                    14
+                                                </span> 16
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    15
+                                                </span> 17
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    16
+                                                </span> 18
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    17
+                                                </span> 19
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    18
+                                                </span> 20
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    19
+                                                </span> 21
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    20
+                                                </span> 22
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <span>
+                                                    21
+                                                </span> 23
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    22
+                                                </span> 24
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    23
+                                                </span> 25
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    24
+                                                </span> 26
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    25
+                                                </span> 27
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    26
+                                                </span> 28
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    27
+                                                </span> 29
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <span>
+                                                    28
+                                                </span> 30
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    29
+                                                </span> 1
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    30
+                                                </span> 2
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    1/9
+                                                </span> 3
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    2
+                                                </span> 4
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    3
+                                                </span> 5
+                                                </td>
+
+                                                <td>
+                                                <span>
+                                                    4
+                                                </span> 6
+                                                </td>
+
+                                            </tr>
+                                        </tbody>                
+                                    </table>
+                                </form>
+                            </div>
+
+                            <li>
+                                <p>Số vé</p>
+                                <div class="input_point">                                    
+                                    <p>1</p>
+                                    <p><i class="fa-solid fa-caret-down"></i></p>
+                                </div>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>                                
+                                </ul>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="button_find">
+                    <button>Tìm chuyến xe</button>
+                </div>
+            </div>
+<!-- Khuyến mãi nổi bật -->
+            <div class="popular-category">
+                <div class="title  wow animate__fadeInUp ">
+                    <h1>khuyến mãi nổi bật</h1>
+                </div>
+
+                <div class="product_promotion flex-center">
+                    <div class="product__promotion-list  wow animate__fadeInUp">
+                        <div class="product__promotion-item">
+                            <img src="/img/khuyenMai5.jpg" alt="" >
+                        </div>
+
+                        <div class="product__promotion-item">
+                            <img src="/img/khuyenMai4.webp" alt="" >
+                        </div>
+
+                        <div class="product__promotion-item">
+                            <img src="/img/khuyenMai5.jpg" alt="" >
+                        </div>
+
+                        <div class="product__promotion-item">
+                            <img src="/img/khuyenMai4.webp" alt="" >
+                        </div>
+
+                        <div class="product__promotion-item">
+                            <img src="/img/khuyenMai5.jpg" alt="" >
+                        </div>
+
+                        <div class="product__promotion-item">
+                            <img src="/img/khuyenMai4.webp" alt="" >
+                        </div>
+
+                        <div class="product__promotion-item">
+                            <img src="/img/khuyenMai5.jpg" alt="" >
+                        </div>
+
+                        <div class="product__promotion-item">
+                            <img src="/img/khuyenMai4.webp" alt="" >
+                        </div>
+
+                        <div class="product__promotion-item">
+                            <img src="/img/khuyenMai5.jpg" alt="" >
+                        </div>
+
+                        <div class="product__promotion-item">
+                            <img src="/img/khuyenMai4.webp" alt="" >
+                        </div>
+
+                        <div class=" icon icon-left">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+
+                        <div class=" icon icon-right">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+<!-- TUYẾN PHỔ BIẾN -->
+            <div class="popular-category light_pink">
+                <div class="title  wow animate__fadeInUp">
+                    <h1>TUyến phổ biến</h1>
+                    <h2>Được tin tưởng và lựa chọn</h2>
+                </div>
+
+                <div class="popular__bus-router flex-center">
+                    <div class="popular__router-list flex  wow animate__fadeInUp">
+                        <div class="parent">
+                            <div class="popular__router-item">
+                                <div class="image">
+                                    <img src="/img/TP.HCM.jpg" alt="Hình anh TP.HCM" >
+                                </div>
+                                
+                                <div class="title_class">
+                                    <p>Tuyến xe từ</p>
+                                    <p>TP. Hồ Chí Minh</p>
+                                </div>
+                                <div class="infomation-list">
+                                    <div class="infomation-item">
+                                        <div class="lable_first">
+                                            <p>Đà Lạt</p>
+                                            <p>290.000đ</p>
+                                        </div>
+                                        <div class="lable_second">
+                                            <p>305km - 8 giờ - 30/08/2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="infomation-item">
+                                        <div class="lable_first">
+                                            <p>Đà Lạt</p>
+                                            <p>290.000đ</p>
+                                        </div>
+                                        <div class="lable_second">
+                                            <p>305km - 8 giờ - 30/08/2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="infomation-item">
+                                        <div class="lable_first">
+                                            <p>Đà Lạt</p>
+                                            <p>290.000đ</p>
+                                        </div>
+                                        <div class="lable_second">
+                                            <p>305km - 8 giờ - 30/08/2024</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="parent">
+                            <div class="popular__router-item">
+                                <div class="image">
+                                    <img src="/img/DaLat.jpg" alt="Hình anh TP.HCM" >
+                                </div>
+                                
+                                <div class="title_class">
+                                    <p>Tuyến xe từ</p>
+                                    <p>TP. Hồ Chí Minh</p>
+                                </div>
+                                <div class="infomation-list">
+                                    <div class="infomation-item">
+                                        <div class="lable_first">
+                                            <p>Đà Lạt</p>
+                                            <p>290.000đ</p>
+                                        </div>
+                                        <div class="lable_second">
+                                            <p>305km - 8 giờ - 30/08/2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="infomation-item">
+                                        <div class="lable_first">
+                                            <p>Đà Lạt</p>
+                                            <p>290.000đ</p>
+                                        </div>
+                                        <div class="lable_second">
+                                            <p>305km - 8 giờ - 30/08/2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="infomation-item">
+                                        <div class="lable_first">
+                                            <p>Đà Lạt</p>
+                                            <p>290.000đ</p>
+                                        </div>
+                                        <div class="lable_second">
+                                            <p>305km - 8 giờ - 30/08/2024</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="parent">
+                            <div class="popular__router-item">
+                                <div class="image">
+                                    <img src="/img/DâNng.jpg" alt="Hình anh TP.HCM" >
+                                </div>
+                                
+                                <div class="title_class">
+                                    <p>Tuyến xe từ</p>
+                                    <p>TP. Hồ Chí Minh</p>
+                                </div>
+                                <div class="infomation-list">
+                                    <div class="infomation-item">
+                                        <div class="lable_first">
+                                            <p>Đà Lạt</p>
+                                            <p>290.000đ</p>
+                                        </div>
+                                        <div class="lable_second">
+                                            <p>305km - 8 giờ - 30/08/2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="infomation-item">
+                                        <div class="lable_first">
+                                            <p>Đà Lạt</p>
+                                            <p>290.000đ</p>
+                                        </div>
+                                        <div class="lable_second">
+                                            <p>305km - 8 giờ - 30/08/2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="infomation-item">
+                                        <div class="lable_first">
+                                            <p>Đà Lạt</p>
+                                            <p>290.000đ</p>
+                                        </div>
+                                        <div class="lable_second">
+                                            <p>305km - 8 giờ - 30/08/2024</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                
+                </div>
+            </div>
+<!-- Kết nối với chúng tôi -->
+            <div class="popular-category">
+                <div class="title  wow animate__fadeInUp">
+                    <h1>Cùng đến mọi nơi</h1>
+                    <h2>Hãy đồng hành cùng chúng tôi</h2>
+                </div>
+                <div class="introduce_bgr flex-center">
+                    <div class="introduce_list flex  wow animate__fadeInUp">
+                        <div class="introduce_item">
+                            <div class="image">
+                                <img src="/img/icon_bus.png" alt="">
+                            </div>                            
+                            <div class="lable">Đặt vé xe</div>
+                        </div>
+
+                        <div class="introduce_item">
+                            <div class="image">
+                                <img src="/img/icon_giaohang.png" alt="">
+                            </div>                            
+                            <div class="lable">Giao hàng nhanh</div>
+                        </div>
+
+                        <div class="introduce_item">
+                            <div class="image">
+                                <img src="/img/icon_bus.png" alt="">
+                            </div>
+                            <div class="lable">Chắc chắn có chỗ</div>
+                        </div>
+
+                        <div class="introduce_item">
+                            <div class="image">
+                                <img src="/img/icon_giaohang.png" alt="">
+                            </div>
+                            <div class="lable">Nhiều ưu đãi</div>
+                        </div>
+                    </div>
+                </div>           
+            </div>
+<!-- Chất lượng và danh dự -->
+            <div class="popular-category light_pink">     
+                <div class="title  wow animate__fadeInUp">
+                    <h1>Chất lượng và danh dự</h1>
+                    <h2>Được tin tưởng và lựa chọn</h2>
+                </div>           
+                <div class="quality_bgr flex-center">
+                    <div class="quality_list  wow animate__fadeInUp">  
+                        <div class="quality_item flex">
+                            <div class="quality__item-content">
+                                <div class="content">
+                                    <p><b>Hơn 20 Triệu</b><br> Lượt khách</p>
+                                    <p>
+                                        <i class="fa-solid fa-quote-right"></i>
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </p>
+                                    <p>Chúng tôi tự hào phục vụ hơn 20 triệu lượt khách hàng mỗi
+                                        năm trên toàn quốc, mang đến những trải nghiệm tuyệt vời
+                                        và chất lượng dịch vụ vượt trội. Từ các thành phố lớn đến
+                                        các tỉnh thành xa xôi, chúng tôi luôn nỗ lực không ngừng
+                                        để đáp ứng nhu cầu đa dạng của khách hàng, đảm bảo mỗi
+                                        chuyến đi đều là một hành trình đáng nhớ.
+                                    </p>
+                                    <p><img src="/img/buslogan.png" alt="" width="120px"></p>
+                                </div>                   
+                            </div>
+                            <div class="quality__item-cart">                   
+                                <img src="/img/donghanh.png" alt="">
+                            </div>                            
+                        </div>
+                        
+
+                        <div class="quality_item flex">
+                            <div class="quality__item-content">
+                                <div class="content">
+                                    <p><b>Hơn 1000 </b><br>chuyến xe</p>
+                                    <p>
+                                        <i class="fa-solid fa-quote-right"></i>
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </p>
+                                    <p>Với hơn 100 chuyến xe mỗi ngày, chúng tôi cam kết mang đến
+                                        cho khách hàng những chuyến đi an toàn, thoải mái và tiện
+                                        lợi. Dù bạn đang ở trung tâm thành phố hay tại các vùng
+                                        xa xôi, dịch vụ của chúng tôi luôn sẵn sàng đáp ứng nhu
+                                        cầu di chuyển của bạn. Chúng tôi tự hào là người bạn
+                                        đồng hành đáng tin cậy, mang lại trải nghiệm hành trình
+                                        suôn sẻ và đáng nhớ cho mọi hành khách.</p>
+                                    <p><img src="/img/buslogan.png" alt="" width="120px"></p>
+                                </div>                   
+                            </div>
+                            <div class="quality__item-cart">                   
+                                <img src="/img/donghanh.png" alt="">
+                            </div>                            
+                        </div>
+                        
+
+                        <div class="quality_item flex">
+                            <div class="quality__item-content">
+                                <div class="content">
+                                    <p><b>Hơn 300 </b><br>chi nhánh</p>
+                                    <p>
+                                        <i class="fa-solid fa-quote-right"></i>
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </p>
+                                    <p>Với hơn 300 chi nhánh trên toàn quốc, chúng tôi luôn
+                                    sẵn sàng phục vụ khách hàng một cách nhanh chóng và thuận
+                                    tiện nhất. Dù bạn ở bất kỳ đâu, hệ thống chi nhánh của
+                                    chúng tôi đảm bảo mang đến sự tiện lợi và dịch vụ chất
+                                    lượng cao. Chúng tôi cam kết đáp ứng mọi nhu cầu của
+                                    bạn với sự chuyên nghiệp và tận tâm.</p>
+                                    <p><img src="/img/buslogan.png" alt="" width="120px"></p>
+                                </div>                   
+                            </div>
+                            <div class="quality__item-cart">                   
+                                <img src="/img/donghanh.png" alt="">
+                            </div>                            
+                        </div>
+
+                        <div class="quality_item flex">
+                            <div class="quality__item-content">
+                                <div class="content">
+                                    <p><b>Hơn 20 Triệu</b><br> Lượt khách</p>
+                                    <p>
+                                        <i class="fa-solid fa-quote-right"></i>
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </p>
+                                    <p>Chúng tôi tự hào phục vụ hơn 20 triệu lượt khách hàng mỗi năm trên toàn quốc, mang đến những trải nghiệm tuyệt vời và chất lượng dịch vụ vượt trội. Từ các thành phố lớn đến các tỉnh thành xa xôi, chúng tôi luôn nỗ lực không ngừng để đáp ứng nhu cầu đa dạng của khách hàng, đảm bảo mỗi chuyến đi đều là một hành trình đáng nhớ.</p>
+                                    <p><img src="/img/buslogan.png" alt="" width="120px"></p>
+                                </div>                   
+                            </div>
+                            <div class="quality__item-cart">                   
+                                <img src="/img/donghanh.png" alt="">
+                            </div>                            
+                        </div> 
+    
+                 
+                    </div>  
+                </div>         
+            </div>
+        </div>
+    </main>
+       
+    <footer class="flex-center">
+        <div class="footer-list ">
+             <div class="footer-img">
+                <div class="title">Chúng tôi mong muốn được đồng hành cùng bạn</div>
+                <img src="/img/footer.png" alt="" width="100%">
+            </div>
+
+            <div class="footer-contact">
+                <div class="app">
+                    <div class="title">Tải app</div>
+                    <div class="app_list">
+                        <div class="Ch-play flex">
+                            <p><a href = ""><img src="/img/ch_play.webp" alt="" width="30px"></a></p>
+                            <p><a href = "">CH Play</a></p>
+                        </div>
+                        <div class="app-store">
+                           <p> <a href = ""><i class="fa-brands fa-apple"></i></a></p>
+                           <p><a href="">App Store</a></p>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="connect">
+                    <div class="title">Kết nối chúng tôi</div>
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook" style="color: blue"></i>Facebook</a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram" style="color: rgb(248, 140, 24)"></i>Instagram</a></li>
+                        <li><a href=""><i class="fa-brands fa-youtube" style="color: rgb(255, 0, 0)"></i>Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-information">
+                <div class="title">Thông Tin Công ty</div>
+                <p>OURBUS</p>
+                <p>Địa chỉ: 123/12 Xô Viết Nghệ Tĩnh, phường 26, quận Bình Thạnh, TP. Hồ Chí Minh</p>
+                <p>Điện thoại: 0123456789</p>
+                <p>Email: support@gmail.com</p>
+            </div>
+        </div>
+       
+    </footer>
+<!-- Model Login Home -->
+    <div class="model_home">
+        <div class="model_overplay"></div>
+        <div class="model_body">
+            <div class="auth__form-regisLogin">
+
+                <div class="form__layout flex-center">
+                <!-- Layout Regis -->
+                    <div class="form__layout-content layout_regis">
+                        <div class="lable">Welcome Back</div>
+                        <div class="lable_note">Enter your personal details to use all <br>of site features</div>
+                        <div class="btn">
+                            <button>Sing In</button>
+                        </div>
+                    </div>
+                    <!-- Thẻ layout di chuyển -->
+                    <div class="model_layout border__rightlo-radius">
+                    </div>
+                </div>
+                
+                <div class="form__layout" >
+                    <!-- form Regis Login -->
+                    <div class="form__regis-login form_regis">
+                        <div class="form__regis_login-title">Create Account</div>
+                        <div class="contact_icon">
+                                <p><a href="#"><i class="fa-brands fa-facebook-f"></i></a></p>
+                                <p><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></p>
+                                <p><a href="#"><i class="fa-brands fa-github"></i></a></p>
+                                <p><a href="#"><i class="fa-brands fa-instagram"></i></a></p>
+                        </div>
+                        <div class="lable">Or use your usename password</div>
+                        <div class="form__input-parent">
+                            <div class="form__input-children">
+                                <form action="" class="myform">
+                                    <div class="input_username">
+                                        <i class="fa-solid fa-user"></i>
+                                        <input type="text" placeholder="Tên đăng nhập">
+                                        <div class="mgs_error msg__error-username"></div>
+                                    </div>
+                                    <div class="password_element input__regis-password">
+                                        <i class="fa-solid fa-key"></i>
+                                        <input type="password" placeholder="Mật khẩu của bạn">
+                                        <i class="eye icon_eye fa-solid fa-eye"></i>
+                                        <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                                        <div class="mgs_error msg__error-password"></div>
+                                    </div>
+                                    <div class="password_element password_retype input__regis-password">
+                                        <i class="fa-solid fa-key"></i>
+                                        <input type="password" placeholder="Nhập lại mật khẩu">
+                                        <i class="eye icon_eye fa-solid fa-eye"></i>
+                                        <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                                        <div class="mgs_error msg__error-passwordRetype"></div>
+                                    </div>
+                                </form>
+                                <div class="lable">
+                                    <p>Bằng việc đăng kí, bạn đã đồng ý với <br>
+                                        <a href="#">Điều khoản</a> &
+                                        <a href="#">Chính sách của chúng tôi</a> 
+                                    </p>
+                                </div>
+                                <div class="btn">
+                                    <button>Sign Up</button>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+
+                    <!-- Layout Login -->
+                     <div class="form__layout-login">
+                        <div class="form__layout-content layout_login" >
+                        <div class="lable">Hello friend</div>
+                        <div class="lable_note">Enter your personal details to use all<br> of site features</div>
+                        <div class="btn">
+                            <button>Sing Up</button>
+                        </div>
+                    </div>
+                     </div>                    
+                </div>
+
+                
+            </div>
+            
+        </div>
+    </div>
+<!-- form Login MoBIle -->
+    <div class="model__home-mobile">
+        <div class="model__overplay-mobile"></div>
+        <div class="model__body-mobile form__regis-login">
+            <div class="model__mobile-parent mobile-item">
+                <div class="model__header-mobile ">
+                    <div class="head-crossbar">
+                        <div class="icon">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <p>Đăng ký</p>
+                    </div>
+                    <div class="form__regis_login-title">Create Account</div>
+                    <div class="contact_icon">
+                            <p><a href="#"><i class="fa-brands fa-facebook-f"></i></a></p>
+                            <p><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></p>
+                            <p><a href="#"><i class="fa-brands fa-github"></i></a></p>
+                            <p><a href="#"><i class="fa-brands fa-instagram"></i></a></p>
+                    </div>
+                    <div class="lable">Or use your usename password</div>
+                </div>
+                <div class="form__input-parent">
+                    <div class="form__input-children">
+                        <form action="" class="myform">
+                            <div class="input_username">
+                                <i class="fa-regular fa-user"></i>
+                                <input type="text" placeholder="Tên đăng nhập">
+                                <div class="mgs_error msg__error-username"></div>
+                            </div>
+                            <div class="password_element input__regis-password">
+                                <i class="fa-solid fa-key"></i>
+                                <input type="password" placeholder="Mật khẩu của bạn">
+                               <i class="eye icon_eye fa-regular fa-eye"></i>
+                                <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                                <div class="mgs_error msg__error-password"></div>
+                            </div>
+                            <div class="password_element password_retype input__regis-password">
+                                <i class="fa-solid fa-key"></i>
+                                <input type="password" placeholder="Nhập lại mật khẩu">
+                               <i class="eye icon_eye fa-regular fa-eye"></i>
+                                <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                                <div class="mgs_error msg__error-passwordRetype"></div>
+                            </div>
+                        </form>
+                        <div class="lable">
+                            <p>Bằng việc đăng kí, bạn đã đồng ý với <br>
+                                <a href="#">Điều khoản</a> &
+                                <a href="#">Chính sách của chúng tôi</a> 
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <button>Sign Up</button>
+                        </div>
+                    </div>
+                </div>             
+                <div class="form__footer-mobile">
+                    <div class="form__input-more">
+                        <div class="content">
+                            <span></span>
+                            <p>Hoặc</p>
+                            <span></span>
+                        </div>
+                        <div class="form-google form__base-more">
+                            <div class="icon">
+                                <img src="/img/icon/google.png" alt="Google" width="20px">
+                            </div>
+                            <div class="form-lable">Đăng ký bằng Google</div>
+                        </div>
+    
+                        <div class="form-google form__base-more">
+                            <div class="icon">
+                                <img src="/img/icon/facebook.png" alt="Google" width="20px">
+                            </div>
+                            <div class="form-lable">Đăng ký bằng Facebook</div>
+                        </div> 
+                        
+                        <div class="form-footer">
+                            <div class="content btn-login">
+                                <p>Bạn đã có tài khoản?</p>
+                                <a href="#"> Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+
+            <div class="model__mobile-layout mobile-item">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Model Menu -->
+    <div class="model_menu">
+        <div class="model_overplay"></div>
+        <div class="model__menu-body">
+            <header id="header" class="mobile">
+                <div class="head flex">
+                   <div class="head_left flex">
+                        <!-- <div class="buttonScreen">
+                            <div class="sun"><i class="fa-solid fa-sun"></i></div>
+                            <div class="btn"></div>
+                        
+                            <div class="moon"><i class="fa-solid fa-moon"></i></div>
+                            <div class="cicle">
+                                <div class="cicle-item"></div>
+                            </div>
+                        </div> -->
+                        <div></div>
+                        <ul class="flex">
+                            <li><img src="/img/flag_vn.png" alt="icon" width="50px"></li>
+                            <li>VI</li>
+                            <li><i class="fa-solid fa-chevron-down"></i></li> 
+                            <li>
+                                <ul class="languages">
+                                    <li>
+                                        <img src="/img/flag_vn.png" alt="" width="50px">
+                                        <p>VI</p>
+                                    </li>
+                                    <li>
+                                        <img src="/img/flag_anh.webp" alt="" width="38px">
+                                        <p>EN</p>
+                                    </li>
+                                </ul> 
+                            </li>  
+                        </ul>         
+                   </div>
+                
+                   <ul class="head_right flex">
+                        <li></li>
+                        <li><a href="#">Đăng nhập</a></li>
+                        <li><a href="#">Đăng ký</a></li>
+                   </ul>
+                </div>
+
+                <div class="cancel">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+
+                <nav>
+                    <ul class="menu">
+                        <li><a href="/html/index.html" id="home"><i class="fa-solid fa-house"></i>Trang Chủ</a></li>
+                        <li><a href="/html/schedule.html">Lịch Trình</a></li>
+                        <li><a href="/html/checkTicket.html" id="checkTicket">Dịch vụ vé</a></li>
+                        <li><a href="/html/news.html" id="news">Tin tức</a></li>          
+                        <li><a href="/html/AboutUs.html" id="about_us">Về chúng tôi</a></li>
+                        <li><a href="/html/contact.html" id="contact">Liên hệ</a></li>
+                        <li><a href="/html/comboSave.html">Combo tiết kiệm</a></li>
+                        <li><a href="/html/insurance.html">Bảo hiểm du lịch</a></li>          
+                    </ul>
+                </nav>
+
+                <div class="contact_icon">
+                    <p><a href="#"><i class="fa-brands fa-facebook-f"></i></a></p>
+                    <p><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></p>
+                    <p><a href="#"><i class="fa-brands fa-github"></i></a></p>
+                    <p><a href="#"><i class="fa-brands fa-instagram"></i></a></p>
+                </div>
+            </header>  
+            <div class="image"></div>
+        </div>
+    </div>
+
+<!-- Nút di chuyển lên -->
+    <div class="moveUp-btn">
+        <div class="button-moveup">
+        <i class="fa-solid fa-angle-up"></i>          
+        </div>
+    </div>
+    <script src="/js/model.js"></script>
+   <script src="/js/trangChu.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> 
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new WOW({
+        boxClass: 'wow',
+        animateClass: 'animate__animated',
+        offset: 100, // Điều chỉnh offset cho phù hợp
+        mobile: true,
+        live: true
+      }).init();
+    });
+  </script> 
+</body>
+</html>

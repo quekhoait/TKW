@@ -1,0 +1,97 @@
+header .header_after{
+    display: none !important;
+}
+aside{
+    display: none !important;
+}
+
+.box-checkTicket{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 200px;
+}
+
+.checkTicket-container{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.checkTicket-container .form {
+    max-width: 600px;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkTicket-container .form-header {
+    color: var(--header_text_color);
+    padding-bottom: 10px;
+    font-weight: 550;
+    font-size: 2.5rem;
+}
+
+.form {
+    position: relative;
+}
+
+.form-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 21px;
+    color: #999;
+    font-size: 1.7rem;
+    user-select: none;
+    pointer-events: none;
+    transition: 0.25s ease;
+}
+
+.form input {
+    border: 1px solid #dde2e8;
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 2rem;
+}
+
+.form input:hover {
+    border-color: var(--hover_color);
+}
+
+.form input:focus {
+    border: 1px solid var(--hover_color);
+    outline: none;
+}
+
+.form input:not(:placeholder-shown) + .form-label,
+.form input:focus + .form-label {
+    top: 0;
+    left: 16px;
+    padding: 0 5px 5px 5px;
+    display: inline-block;
+    background-color: white;
+    color: var(--hover_color);
+    font-size: 1.3rem;
+}
+
+.submit-btn {
+    margin-top: 25px;
+    color: var(--button_text_color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 70px;
+    background: var(--button_color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    color: white;
+    background: var(--hover_color);
+}

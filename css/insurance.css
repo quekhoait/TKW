@@ -1,0 +1,342 @@
+
+header .header_after{
+    display: none !important;
+}
+aside{
+    display: none !important;
+}
+
+
+.insurance{
+    width: 100%;
+    height: 100%;
+}
+
+.head-insurance{
+    background-image: url('/img/insurance/bgr.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+}
+
+.head__insurance-content{
+    width: 440px;
+    margin-left: 20%;
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+.head__insurance-content :nth-child(2){
+    padding: 16px 0;
+}
+
+.head__insurance-content p:last-child{
+    line-height: 24px;
+
+}
+
+
+/* Menu insurance */
+.insurance-information{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.insurance__information-list{
+    width: 75%;
+    padding-top: 24px;
+}
+
+ul.insurance-menu{
+    display: flex;
+    justify-content:space-around;
+    padding: 12px 0;
+    border-bottom: 2px solid var(--hover-color);
+}
+
+ul.insurance-menu li {
+ 
+}
+
+ul.insurance-menu li a{
+    padding: 12px 24px;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: 550;
+    position: relative;
+}
+
+ul.insurance-menu li a::after{
+    content: "";
+    background-color: rgb(0, 72, 144);
+    width: 0%;
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -13px;
+    transition: width .3s linear;
+}
+
+ul.insurance-menu li a:hover::after{
+   width: 100%;
+}
+
+
+
+.insurance-container{
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.insurance-container .insurance-base .title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 36px 0 12px 0;
+}
+
+.insurance-container .insurance-base ul li{
+    padding: 12px 0 0 24px;
+    font-weight: 550;
+   
+}
+
+.insurance-container .insurance-base ul li p{
+    font-weight: 400;
+    padding-top: 8px;
+}
+
+.insurance-base.program{
+    display: none;
+}
+
+
+
+.insurance-coverage{
+    display: none;
+}
+
+.insurance__coverage-body{
+    display: flex;
+}
+
+.insurance-coverage .content{
+    flex: 6;
+    padding-top: 36px;
+}
+
+.insurance-coverage .content{
+    flex: 6;
+}
+
+.insurance-coverage p{
+    padding: 0 24px 12px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.insurance-coverage p strong{
+    font-weight: 550;
+}
+
+.insurance-coverage .image{
+    flex: 4;
+}
+
+.insurance-coverage .image img{
+    width: 100%;
+}
+
+
+.insurance-base.clause{
+    display: none;
+}
+
+.insurance-base.clause ol{
+    padding: 0 24px;
+}
+
+.insurance-base.clause ol p{
+    font-size: 1.8rem;
+    padding: 8px 0;
+}
+
+.insurance-base.clause ol li{
+    padding: 8px 8px;
+    line-height: 24px;
+    font-size: 1.6rem;
+}
+
+
+.detail-information h1{
+    padding: 24px 0 16px 0;
+    font-size: 2.6rem;
+}
+
+
+
+/* TABLE */
+.insurance table{
+    width: 100%;
+}
+
+.insurance table thead tr td{
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 550;
+    color: var(--white-color);
+}
+
+.insurance table thead tr td{
+    text-align: center;
+}
+
+.insurance table thead tr td:first-child{
+    text-align: left;
+}
+
+.insurance table tbody tr:first-child{
+    background-color: yellowgreen;
+    font-weight: bold;
+}
+
+.insurance table tbody tr td{
+    padding: 16px 24px;
+}
+
+.insurance table tbody tr:nth-child(4){
+    background-color: yellowgreen;
+    font-weight: bold;
+}
+
+.insurance table tbody tr td{
+    text-align: center;
+}
+
+.insurance table tbody tr td:first-child{
+    text-align: left;
+}
+
+/* Tablet */
+@media (max-width: 880px) {
+
+    html{
+        font-size: 80.25% !important;
+    }
+
+    .head__insurance-content {
+        margin-left: 8%;
+        font-size: 1.8rem;
+    }
+
+    .head__insurance-content p:last-child {
+        line-height: 32px;
+    }
+
+    .insurance-container {
+        font-size: 1.8rem;
+    }
+
+    .insurance-base.program > p{
+        line-height: 32px;
+    }
+
+    .insurance-container .insurance-base ul li {
+        padding: 18px 0 0 24px;
+        font-weight: 550;
+    }
+    .insurance table tbody tr td {
+        padding: 16px 24px;
+        line-height: 32px;
+    }
+
+    .insurance-coverage p {
+        font-size: 1.8rem;
+        line-height: 32px;
+        text-align: justify;
+    }
+
+    .insurance-base.clause ol li {
+        padding: 8px 8px;
+        line-height: 32px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 750px) {
+
+    html{
+        font-size: 50% !important;
+    }
+
+    .head-insurance {
+        background: linear-gradient(45deg, #00fff5, #4956ec);
+    }
+
+    .head__insurance-content {
+        margin-left: 6%;
+        font-size: 2rem;
+        padding-right: 16px;
+        text-align: justify;
+    }
+
+    .head__insurance-content  p{
+        font-size: 2.4rem;
+    }
+
+    .head__insurance-content p:last-child {
+        line-height: 26px;
+    }
+
+    ul.insurance-menu li a {
+        text-align: center;
+        padding: 4px 8px;
+        font-size: 2.4rem;
+    }
+
+    .insurance-container {
+        font-size: 2.4rem;
+    }
+
+    .insurance table thead tr td {
+        padding: 14px 4px;
+        font-size: 2.4rem;
+    }
+
+    .insurance .table-parent{
+        overflow-x: auto
+    }
+
+    .insurance table tbody tr td:first-child{
+        padding: 8px;
+        font-size: 2.4rem;
+    }
+
+    .insurance table thead tr td:first-child{
+        display: block;
+        width: 160px;
+    }
+
+    .insurance-coverage p {
+        font-size: 2.4rem;
+    }
+
+    .insurance__coverage-body {
+        display: block;
+    }
+
+    .insurance-base.clause ol li {
+        font-size: 2.4rem;
+    }
+
+    .insurance-base.clause ol p {
+        font-size: 2.4rem;
+    }
+}

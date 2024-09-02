@@ -1,0 +1,532 @@
+/* RESPONSIVE */
+
+@media (max-width: 1200px) and(min-width: 750px) {
+    .model__home-mobile{
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 1200px  ) {
+    nav ul.menu>li>a:hover::after{
+        display: none;
+    }
+    .combo__save-list {
+        width: 95%;
+    }
+    .navbar{
+        display: block;
+        font-size: 3rem;
+        color: var(--white-color);
+    }
+
+    header .head{
+        padding: 16px;
+    }
+
+    header .head_right {
+        display: none
+    } 
+
+    header .head_center {
+        display: none
+    }
+     header .head_left {
+        display: none
+    } 
+     nav{
+        display: none;
+        padding: 0;
+    } 
+
+    aside{
+        display: none;
+    }
+
+    header .header_after{
+        display: none;
+    }
+
+    .model_menu .head_left{
+        display: flex !important;
+    }
+
+    .model_menu .head_right{
+        display: flex !important;
+    }
+
+    .model_menu .head_left{
+        display: flex !important;
+    }
+
+    .model_menu nav{
+        display: block !important;
+    }
+
+    .model_menu header .head{
+        width: 100%;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(45deg, #00fff5, #4956ec);
+    }
+
+    .model_menu header{
+        display: block;
+    }
+
+    .head__left-resposive{
+        display: flex;
+        align-items: center;
+        padding: 16px 32px;
+    }
+
+    .head__left-resposive .title{
+        color: var(--white-color);
+        font-size: 2rem;
+        padding-left: 16px;
+    }
+
+    main .form__find_list {
+        width: 95%;
+    }
+
+    main .product__promotion-list {
+        width: 95%;
+    }
+
+
+    .popular__router-list {
+        width: 95%;
+    }
+
+    main .introduce_list {
+        width: 95%;
+    }
+
+    .quality_list{
+        width: 95%;
+    }
+
+    .box__news-list {
+        width: 95%;
+    }
+
+    .insurance__information-list {
+        width: 95%;
+    }
+
+    .box__schedule-list {
+        width: 95%;
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width: 880px) {
+ 
+    html{
+        font-size: 80.25%;
+    }
+    
+    .button-moveup{
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-moveup i {
+        font-size: 3.6rem;
+        color: #adc3f8;
+    }
+
+    .model_body {
+        width: 90%;
+    }
+
+    .auth__form-regisLogin{
+        width: 100%;
+        height: 500px;
+    }
+
+    .form__layout .form__layout-content .lable_note {
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+
+    .form__regis-login .contact_icon p {
+        width: 36px;
+        height: 36px;
+    }
+
+    .form__regis-login .contact_icon a i {
+        font-size: 1.8rem;
+        line-height: 36px;
+    }
+
+    .form__regis-login .lable {
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 16px 0;
+    }
+
+    .form__regis-login .form__input-children {
+        width: 86%;
+    }
+
+    .form__regis-login .form__input-children input {
+        width: 100%;
+        height: 40px;
+        font-size: 1.6rem;
+        padding-left: 42px;
+    }
+
+    .auth__form-regisLogin i {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    
+    }
+
+    .form__regis-login .form__input-children .input_username i {
+        line-height: 36px;
+    }
+
+    .form__regis-login .form__input-children .password_element i.eye {
+        line-height: 36px;
+    }
+
+    .form__regis-login .form__input-children .password_element i.fa-key {
+        line-height: 36px;
+    }
+
+    .btn button{
+        font-size: 1.8rem;
+    }
+
+
+    header .head_left > ul:last-child {
+        font-size: 2rem;
+    }
+    header .head_right li a {
+        padding: 5px 12px;
+        font-size: 2.2rem;
+    }
+
+    .model_menu ul.languages li:first-child {
+        width: 150px;
+    }
+
+    .model__menu-body{
+        max-width: 550px;
+    }
+
+    .model_menu nav ul.menu li a {
+        padding: 20px 0;
+        font-size: 1.8rem;
+    }
+
+    header .head_left ul > li:first-child img{
+        width: 90px;
+    }
+
+    header .head_left ul.languages{
+        top: 80%;
+    }
+
+    header .head_left ul.languages li:last-child {
+        padding: 12px 0 5px 10px;
+    }
+
+    header .head_left ul.languages li:first-child img {
+        width: 81px;
+    }
+
+    header .head_left ul.languages li:last-child img {
+        width: 65px;
+    }
+
+    .footer-img .title {
+        font-size: 2rem;
+        line-height: 36px;
+    }
+
+    .footer-list {
+        flex-wrap: wrap;
+    }
+
+    .footer-img {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+
+    .footer-information {
+        flex: 1;
+        font-size: 2rem;
+    }
+
+    .footer-information :nth-child(3) {
+        line-height: 36px;
+    }
+
+    .footer-contact .connect ul li {
+        font-size: 2.4rem;
+    }
+
+    .footer-information :nth-child(2) {
+        font-size: 2.6rem;
+    }
+
+
+}
+
+
+@media (max-width: 750px) {
+
+    html{
+        font-size: 50% !important;
+    }
+
+    .btn button {
+        font-size: 2.4rem;
+    }
+
+    .model_home{
+        display: none !important;
+    }
+
+    .navbar{
+        font-size: 5rem;
+    }
+
+    .btn {
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .button-moveup i {
+        font-size: 3.6rem;
+        color: #adc3f8;
+        line-height: 50px;
+    }
+
+    main .popular-category .title h1 {
+        color: var(--primary-color);
+    }
+
+    main .popular-category .title h2 {
+        font-size: 2rem;
+    }
+
+    .model_menu .head_left{
+        display: block !important;
+    }
+
+    .buttonScreen {
+        margin: auto;
+    }
+
+    header .head_left > ul:nth-child(2) {
+        padding: 0;
+    }
+
+    header .head_left > ul:last-child li {
+        padding: 8px 0px;
+        font-size: 2.4rem;
+    }
+
+    header .head_left > ul:last-child li:nth-child(2) {
+        padding: 0 8px 0 0;
+    }
+    header .head_right {
+        padding-right: 0px;
+    }
+    header .head_right li a {
+        font-size: 2.4rem;
+        color: var(--primary-color);
+        font-weight: 550;
+    }
+
+    header .head_left ul.languages {
+        left: 0px;
+    }
+
+    header .head_left ul.languages li:last-child {
+        padding: 6px 0 5px 10px;
+    }
+    ul.languages{
+        left: 0;
+    }
+
+    .model_menu nav ul.menu li a {
+        font-size: 2.1rem;
+    }
+
+    .button_find button {
+        font-size: 2.4rem;
+    }
+    .model_menu .image{
+        display: none;
+    }
+
+    .model_menu ul.languages li:first-child {
+        width: 130px;
+    }
+
+    
+    /* form đăng ký đăng nhập trên mobile */
+
+
+    .form__regis-login .form__input-children {
+        width: 80%;
+    }
+
+    .form__regis_login-title{
+        font-size: 4rem;
+        color: var(--primary-color);
+        padding-bottom: 16px;
+        padding-top: 20%;
+    }
+
+    .form__regis-login .contact_icon a i {
+        font-size: 2.4rem;
+    }
+
+    .form__regis-login .contact_icon p {
+        width: 35px;
+        height: 35px;
+        line-height: 42px;
+    }
+
+    .form__regis-login .lable{
+        font-size: 2rem;
+        padding: 16px 0;
+    }
+
+    .form__regis-login .form__input-children input {
+        height: 40px;
+        font-size: 2.3rem;
+    }
+
+    .form__regis-login .form__input-children .input_username i {
+        position: absolute;
+        font-size: 2.2rem;
+        line-height: 40px;
+        top: 0px;
+        left: 10px;
+    }
+
+    .form__regis-login .form__input-children .password_element i.fa-key {
+        display: none;
+    }
+
+    .form__regis-login .form__input-children .password_element i.eye {
+        position: absolute;
+        font-size: 2.2rem;
+        line-height: 40px;
+        right: 10px;
+    }
+
+    .mgs_error {
+        color: red;
+        font-size: 1.8rem;
+        padding: 8px 0px 14px 4px;
+    }
+
+    header .head_left ul > li:first-child img {
+        width: 70px;
+    }
+
+
+    header .head_left ul.languages li:first-child img {
+        width: 70px;
+    }
+
+    header .head_left ul.languages li:last-child img {
+        width: 54px;
+    }
+
+    footer.flex-center{
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+
+    .footer-img {
+        flex: 0 0 100%;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .footer-contact .app_list{
+        display: block;
+    }
+
+    .footer-contact .app_list a{
+       font-size: 2.4rem;
+    }
+
+    .footer-contact .app_list .Ch-play {
+        display: flex;
+        justify-content: unset;
+        padding: 8px 12px;
+    }
+
+    .footer-contact .app_list .app-store {
+        padding: 12.8px 12px;
+        margin-top: 8px;
+        
+    }
+
+    .footer-img img{
+        display: none;
+    }
+
+    .footer-contact .connect {
+        padding-top: 16px;
+    }
+
+    .footer-contact .connect ul{
+        margin: 0;
+        padding: 0 16px;
+        font-size: 2.4rem;
+    }
+
+    .footer-contact .connect ul li i {
+        font-size: 3.4rem;
+    }
+
+    .footer-list{
+        padding-top: 0;
+        padding-bottom: 12px;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+
+    .footer-img .title {
+        font-size: 2.4rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .footer-contact .title {
+        font-size: 2.4rem;
+    }
+
+    .footer-information {
+        flex: 1;
+        font-size: 2.4rem;
+    }
+
+    .footer-information :nth-child(3) {
+        line-height: 25px;
+    }
+
+    .footer-img .title {
+        line-height: 32px;
+    }
+
+}

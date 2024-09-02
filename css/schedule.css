@@ -1,0 +1,333 @@
+
+header .header_after{
+    display: none;
+}
+aside{
+    display: none;
+}
+
+.box-schedule{
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.box__schedule-list{
+    width: 75%;
+    font-size: 1.4rem;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+}
+
+
+.search-box {
+    width: 50%;
+    background: #fff;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.swap-btn {
+    border: none;
+    background: none;
+}
+
+.switch-location {
+    border: transparent;
+    background: none;
+    transition: transform 0.3s ease;
+}
+
+.switch-location:hover {
+    transform: rotate(180deg); 
+}
+
+.switch-location:active {
+    transform: rotate(0deg); 
+}
+
+.input {
+    padding: 0;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.input-prefix {
+    padding: 0 32px 0 24px;
+}
+
+.table-header {
+    color: var(--primary-color);
+    margin-top: 24px;
+    border: 1px solid #dde2e8;
+    border-radius: 16px;
+    max-height: 144px;
+    padding: 16px 12px 12px;
+    overflow: overlay;
+    min-width: 1000px;
+    display: flex;
+}
+
+.tuyen-xe {
+    display: flex;
+    flex: 0 0 25%;
+    max-width: 25%;
+    gap: 15px;
+}
+
+.tuyen-xe p {
+    margin: 0;
+}
+
+.tuyen-xe .from {
+    color: orangered;
+}
+
+.tuyen-xe .to {}
+
+.loai-xe {
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
+}
+
+.quang-duong {
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+}
+
+.thoi-gian-hanh-trinh {
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
+}
+
+.gia-ve {
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
+}
+
+.tim-tuyen-xe {
+    flex: 1 1 auto;
+    text-align: end;
+}
+
+.tim-tuyen-xe button {
+    background: var(--button_color);
+    color:  var(--button_text_color);
+    border: none;
+    padding: 0 20px;
+    height: 32px;
+    padding: 4px 16px;
+    font-size: 14px;
+    border-radius: 32px;
+}
+
+.tim-tuyen-xe button:hover {
+    background-color: var(--hover_color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.table-row {
+    margin-top: 24px;
+    border: 1px solid #dde2e8;
+    border-radius: 16px;
+    max-height: 144px;
+    padding: 16px 12px 12px;
+    overflow: overlay;
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.row-line {
+    display: flex;
+    align-items: center;
+}
+
+/* thanh cuon */
+::-webkit-scrollbar {
+    margin: 0;
+    padding: 0;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(135, 133, 133);
+    border-radius: 5px;
+}
+
+/* Tablet */
+@media (max-width: 880px) and (min-width: 750px){
+
+    html{
+        font-size: 80.25% !important;
+    
+    }
+
+    .search-box {
+        height: 50px;
+    }
+
+    .input {
+        font-size: 1.8rem;
+    }
+
+    .input-prefix i{
+        font-size: 2rem;
+        padding: 0 24px 0 24px;
+    }
+
+    .table-header{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .tuyen-xe {
+        display: flex;
+        flex: 0 0 32%;
+        max-width: 32% !important;
+    }
+
+    .tuyen-xe .from {
+        color: orangered;
+        width: 31%;
+    }
+    .loai-xe {
+        flex: 0 0 14.333333%;
+        max-width: 13%;
+    }
+
+    .quang-duong {
+        flex: 0 0 11%;
+        max-width: 11%;
+    }
+
+    .thoi-gian-hanh-trinh {
+        flex: 0 0 16.66666667%;
+        max-width: 16.66666667%;
+    }
+
+    .gia-ve {
+        padding-left: 14px;
+        flex: 0 0 10%;
+        max-width: 10%;
+    }
+
+    .tim-tuyen-xe {
+        flex: auto;
+        max-width: 19%;
+    }
+
+    .table-parent{
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .tuyen-xe .to {
+        max-width: 43%;
+    }
+
+    .tim-tuyen-xe button {
+        font-size: 1.8rem;
+        height: 50px;
+    }
+
+    .row-line{
+        font-size: 1.7rem;
+    }
+
+    .box-schedule .swap-btn img{
+        width: 60px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    html{
+        font-size: 50% !important;
+    }
+
+    .box-schedule {
+        padding: 16px 0;
+    }
+
+    .search-box {
+        height: 40px;
+    }
+    .input-prefix{
+        padding: 0 12px;
+        font-size: 2rem;
+    }
+
+    .input{
+        font-size: 2rem;
+    }
+
+    .tuyen-xe {
+        display: flex;
+        flex: 0 0 32%;
+        max-width: 32% !important;
+    }
+
+    .tuyen-xe .from {
+        color: orangered;
+        width: 31%;
+    }
+    .loai-xe {
+        flex: 0 0 14.333333%;
+        max-width: 13%;
+    }
+
+    .quang-duong {
+        flex: 0 0 11%;
+        max-width: 11%;
+    }
+
+    .thoi-gian-hanh-trinh {
+        flex: 0 0 16.66666667%;
+        max-width: 16.66666667%;
+    }
+
+    .gia-ve {
+        padding-left: 14px;
+        flex: 0 0 10%;
+        max-width: 10%;
+    }
+
+    .table-header {
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 4px 12px 4px;
+    }
+
+    .table-header > div{
+        margin: auto;
+    }
+
+    .row-line{
+        font-size: 2.2rem;
+    }
+
+
+    .tim-tuyen-xe button {
+        font-size: 2.2rem;
+        height: 40px;
+    }
+
+    .table-parent{
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .box-schedule .swap-btn img{
+        width: 40px;
+    }
+}

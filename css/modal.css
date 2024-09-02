@@ -1,0 +1,679 @@
+
+/* form đăng ký đăng nhập */
+.model_home{
+    display: none;
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+}
+
+.model_overplay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.model_body{
+    z-index: 1;
+    margin: auto;
+}
+
+
+.auth__form-regisLogin {
+    background-color: var(--white-color);
+    width: 700px;
+    height: 410px;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    animation: animation_languages .3s linear;
+}
+
+.form__layout{
+    flex: 1;
+}
+
+
+.form__layout-content{
+  text-align: center;
+  z-index: 1;
+  color: var(--white-color);
+}
+
+.form__layout-content.layout_regis .btn{
+    padding: 26px 0 0 0;;
+}
+
+.form__layout .form__layout-content .lable{
+    padding: 0 0 26px;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+
+.form__layout .form__layout-content .lable_note{
+    font-size: 1.6rem;
+}
+
+.form__layout:nth-child(2) .form__layout-login .btn:last-child{
+     padding: 26px 0 0 0;
+}
+
+
+.form__regis-login{
+   z-index: 1;
+}
+
+
+
+.form__layout-content.layout_login{
+    display: block;
+}
+
+
+
+
+.form__regis_login-title{
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 0 0 12px 0;
+    font-weight: bold;
+}
+
+.form__regis-login .contact_icon{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form__regis-login .contact_icon p{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    line-height: 36px;
+    margin: 0 8px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.form__regis-login .contact_icon p:hover{
+    background-color: var(--primary-color) ;
+}
+
+.form__regis-login .contact_icon p:hover a{
+    color: var(--white-color);
+}
+
+.form__regis-login .contact_icon a{
+    color: var(--text-color);
+}
+
+.form__regis-login .contact_icon a i{
+    font-size: 1.8rem;
+}
+
+.form__regis-login .lable{
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 10px 0 8px;
+}
+
+.form__input-parent{
+    display: flex;
+    justify-content: center;
+}
+
+.form__regis-login .form__input-children{
+    width: 70%;
+}
+
+.form__regis-login .form__input-children input{
+    width: 100%;
+    height: 30px;
+    padding: 0 32px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   
+}
+
+.form__regis-login .form__input-children input:focus{
+    border: none;
+    outline: none;
+}
+
+.form__regis-login .form__input-children .input_username{
+    position: relative;
+}
+
+.form__regis-login .form__input-children .input_username .lable{
+    position: absolute;
+    top: -2px;
+    left: 32px;
+}
+
+
+.form__regis-login .form__input-children .input_username i{
+    position: absolute;
+    top: 0px;
+    line-height: 30px;
+    left: 10px;
+}
+
+.form__regis-login .form__input-children .password_element{
+    position: relative;
+}
+
+
+.form__regis-login .form__input-children .password_element i.fa-key{
+    position: absolute;
+    line-height: 30px;
+    left: 10px;
+}
+
+.form__regis-login .form__input-children .password_element i.eye{
+    position: absolute;
+    line-height: 30px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Model layout */
+
+.form__layout{
+    position: relative;
+}
+.model_layout{
+    position: absolute;
+    background: linear-gradient(to bottom, #00fff5, rgb(58 54 196), #3a6c95);
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+   transition:  all .5s linear;
+   z-index: 2;
+}
+
+.form__regis-login.form_regis{
+    transform: translateX(0);
+    opacity: 1;
+    transition: all .5s linear ;
+    padding-top: 24px;
+}
+
+.form__regis-login.form_login{
+    display: none;
+}
+
+.form__layout-content.layout_regis{
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 3;
+    transition: all .5s linear ;
+}
+
+.form__layout-login{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.form__layout-content.layout_login{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all .5s linear ;
+}
+
+
+
+/* Di chuyển model */
+.reverse_layout {
+    position: absolute;
+    transform: translateX(100%);
+}
+
+.reverse__form-regis{
+    transform: translateX(-100%) !important;
+}
+
+.reverse__form-layout_regis{
+    transform: translateX(-100%) !important;
+    opacity: 0 !important;
+}
+
+
+.reverse__form-layout_login{
+    transform: translateX(0%) !important;
+    opacity: 1 !important;
+
+}
+
+
+.border__leftlo-radius{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 30%;
+    border-top-left-radius: 30%;
+}
+
+.border__rightlo-radius{
+    border-bottom-left-radius:20px;
+    border-top-left-radius:20px;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 30%;
+}
+/* ModelHomeMobile */
+.model__home-mobile{
+    display: none;
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: translateX(0);
+    transition: all .3s linear;
+}
+
+.model__overplay-mobile{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+}
+
+.model__body-mobile{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.model__home-mobile .head-crossbar{
+    display: flex;
+    font-size: 1.6rem;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 16px 0;
+    color: var(--white-color);
+    z-index: 33;
+}
+
+.model__home-mobile .head-crossbar .icon{
+    font-size: 3rem;
+    padding: 0 24px 0 8px;
+
+}
+
+.model__home-mobile .head-crossbar p{
+    line-height: 32px;
+    font-size: 3.2rem;
+}
+
+.model__mobile-parent.mobile-item{
+    height: 100%;
+    background-color:var(--white-color);
+    transform: translateX(0);
+    transition: all .1s linear;
+    z-index: 22;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.model__home-mobile .mobile-item{
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.form__footer-mobile{
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.form__footer-mobile .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__footer-mobile .content p{
+    padding: 0 8px;
+    font-size: 2.4rem;
+}
+
+.form__footer-mobile .content span:first-child{
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(to left, var(--primary-color), var(--white-color));
+}
+
+.form__footer-mobile .content span:last-child{
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(to right, var(--primary-color), var(--white-color));
+}
+
+.form__footer-mobile .form__base-more{
+    width: 80%;
+    height: 40px;
+    border: 1px solid var(--light-blue);
+    margin: 12px auto;
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+}
+
+.form__footer-mobile .form__base-more .icon{
+    padding: 0 8px;
+}
+
+.form__footer-mobile .form-footer{
+    margin: auto;
+    font-size: 2.2rem;
+    width: 100%;
+    padding: 50px 0 36px 0;
+
+}
+
+
+/* Model mobileLayout */
+
+.model__mobile-layout{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+/* Form Depature date */
+
+main{
+    position: relative;
+}
+
+
+.form__date-body{
+    position: absolute;
+    background-color: var(--white-color);    
+    z-index: 1;
+    border-radius: 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    top: 85px;
+    left: 0px; 
+    transform-origin: 0px top;
+    animation: animation_languages .5s ease;
+
+    display: none;  
+}
+
+.form__date-title{
+    padding: 16px 28px 8px;
+    font-size: 1.6rem;
+    color: rgb(37, 107, 199);
+    font-weight: 550;
+}
+
+
+.selected-time{
+    padding: 8px 28px;
+    font-size: 1.4rem;
+}
+
+.selected__time-item{
+    font-size: 1.8rem;
+    padding: 16px;
+    border: 1px solid var(--light-blue);
+    border-radius: 10px;
+}
+
+.selected__time-title{
+    text-align: center;
+    padding: 12px 0 8px;
+    color: red;
+    font-weight: 900;
+}
+
+.table_calendar{
+    padding: 8px 28px 16px;
+}
+
+
+.table_calendar table{
+    margin: auto;
+     border-collapse: collapse; /*khoảng cách giữa 2 td trong bảng */
+} 
+
+.table_calendar table thead tr td{
+    border: none;
+    font-size: 1.7rem;
+}
+
+.table_calendar table tbody tr td{
+    position: relative;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.table_calendar table tbody tr td:hover{
+    background-color: rgb(247, 193, 164);
+    color: var(--white-color);
+}
+
+.table_calendar table tbody tr td span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.1rem;
+}
+
+
+.table_calendar table tbody tr:first-child td{
+    color: var(--gray-color);
+    cursor: text;
+}
+
+.table_calendar table tbody tr:first-child td:hover{
+    background-color: var(--white-color);
+    color: var(--gray-color);
+}
+
+.table_calendar table tbody tr:first-child td:last-child{
+    color: black;
+    cursor: pointer;
+}
+
+.table_calendar table tbody tr:first-child td:last-child:hover{
+    background-color: rgb(247, 193, 164);
+    color: var(--white-color);
+}
+
+.table_calendar table tbody tr:last-child td{
+    color: var(--gray-color);
+    cursor: text;
+}
+
+.table_calendar table tbody tr:last-child td:hover{
+    background-color: var(--white-color);
+    color: var(--gray-color);
+}
+
+.table_calendar table tbody tr:last-child td:first-child{
+    color: black;
+    cursor: pointer;
+}
+
+.table_calendar table tbody tr:last-child td:first-child:hover{
+    background-color: rgb(247, 193, 164);
+    color: var(--white-color);
+}
+
+
+.table_calendar table tr td{
+    text-align: center;
+    border: 1px solid var(--hover-color);
+    padding: 18px 16px;
+    font-size: 1.1rem;
+}
+
+.table_calendar table tr td span{
+    padding: 2px 2px 4px 4px;
+    font-size: 0.8rem;
+    color:var(--gray-color);
+}
+
+/* Model menu */
+
+
+.model_menu{    
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    flex-direction: row-reverse;
+    z-index: 2; 
+}
+
+.model__menu-body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    z-index: 4;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: white;
+    animation: modelMenuHeight .3s linear;
+}
+.model_menu header .head{
+    background-color: #00fff5;
+}
+
+.model_menu header nav{
+    background-color: var(--hover-color);
+}
+
+.model_menu .head_left{
+    padding-left: 16px;
+}
+
+.model_menu .head_right li{
+    border: none !important;
+}
+
+
+
+.model_menu header .head_right li:last-child a{
+    padding-left: 16px;
+}
+
+.model_menu header .head {
+    padding: 16px 0;
+}
+
+.model_menu nav ul.menu {
+    padding: 0;
+}
+
+.model_menu nav ul.menu li a{
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.model_menu nav ul.menu li a:hover{
+    color: var(--white-color);
+}
+
+.model_menu .cancel{
+    padding: 4px 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.4rem;
+    color: red;
+    cursor: pointer;
+}
+
+.model_menu .cancel:hover{
+    background-color: red;
+    color: var(--white-color);
+}
+
+
+.model_menu ul.languages li:first-child{
+    padding: 0 !important;
+    width: 100px;
+}
+
+.model_menu nav ul.menu>li>a::after {
+    display: none;        
+}
+
+.model_menu .contact_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--primary-color);
+}
+
+.model_menu .contact_icon::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 100%;
+    background-color:var(--primary-color);
+    top: 0;
+    left: -10px;
+}
+
+.model_menu .contact_icon::after{
+    position: absolute;
+    content: "";
+    border-top: 11px solid var(--primary-color);
+    border-left: 11px solid transparent;
+    /* background-color: red; */
+    top: 76px;
+    left: -10px;
+    filter: brightness(50%);
+}
+
+.model_menu .contact_icon p{
+    padding: 16px 32px;
+    font-size: 3rem;
+
+} 
+ 
+.model_menu .contact_icon p i{
+    color: var(--white-color);
+    transform: translateY(0);
+    transition: all .2s linear;
+} 
+
+.model_menu .contact_icon p i:hover{
+    transform: translateY(-4px);
+} 
+
+.model_menu .image{
+    background-image: url(/img/travelGuide.png);
+    width: 60%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    
+}

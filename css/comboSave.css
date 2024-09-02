@@ -1,0 +1,247 @@
+
+header .header_after{
+    display: none !important;
+}
+aside{
+    display: none !important;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.combo-save{
+    width: 100%;
+    height: 100%;
+}
+
+.combo__save-container{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.combo__save-container h1{
+    color: var(--primary-color);
+    padding-top: 12px;
+}
+
+.combo__save-list{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    /* justify-content: center; */
+    padding: 24px 0 16px 0;
+    flex-wrap: wrap;
+}
+
+.combo__save-item-parent{
+    width: 33.33%;
+    padding: 16px 16px;
+}
+
+.combo__save-item{
+    border: 1px solid  var(--hover-menu);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: all .3s linear;
+}
+
+.combo__save-item:hover{
+    transform: translateY(-4px);
+}
+
+.combo__save-item img{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.combo__save-item .content{
+    text-align: left;
+}
+
+.combo__save-item .address-star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px;
+}
+
+.combo__save-item .address-star p:first-child i{
+    padding-right: 8px;
+}
+
+.combo__save-item .address-star p:first-child{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.combo__save-item .address-star p:last-child i{
+    font-size: 1.2rem;
+    color: red;
+}
+
+.combo__save-item .title{
+    font-size: 1.7rem;
+    font-weight: 550;
+    padding: 0 8px;
+}
+
+
+.combo__save-item .service{
+    display: flex;
+    padding: 12px 0;
+}
+
+.combo__save-item .service p{
+    padding: 4px 8px;
+    font-size: 1.4rem;
+   border: 1px solid var(--primary-color);
+   border-radius: 8px;
+   margin: 4px;    
+}
+
+.combo__save-item .service p i{
+    padding-right: 8px;
+}
+
+.combo__save-item .time-price{
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: space-between;
+    padding: 0 8px 12px;
+
+}
+.combo__save-item .time-price i{
+    padding-right: 4px;
+    color: rgb(176, 72, 3);
+}
+
+.combo__save-item .time-price p:last-child{
+    font-size: 1.6rem;
+}
+
+.combo__save-item .btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+
+.btn_combosave{
+    width: 70%;
+    background-color: var(--primary-color);
+    padding: 8px ;
+    border-radius: 10px;
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 1.4rem;
+    animation: combosave 1.5s infinite;
+}
+
+
+
+
+/* tabLet  */
+
+
+@media (max-width: 880px) {
+
+    html{
+        font-size: 80.25%;
+    }
+
+    .combo__save-list {
+        padding: 10px 0 16px 0;
+        width: 100% !important;
+    }
+
+    .combo__save-container h1 {
+        font-size: 3.6rem;
+        padding-top: 24px;
+    }
+
+    .combo__save-item-parent{
+        width: 50%;
+    }
+
+    .combo__save-item .time-price {
+        font-size: 1.6rem;
+    }
+
+    .combo__save-item .service p {
+        font-size: 1.5rem;
+    }
+
+    .combo__save-item .time-price p:last-child {
+        font-size: 1.8rem;
+    }
+
+    .combo__save-item .title {
+        font-size: 2rem;
+        padding: 4px 16px;
+    }
+
+    .btn_combosave{
+        font-size: 1.8rem;
+    }
+
+    .combo__save-item .btn {
+        padding-bottom: 24px;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    html{
+        font-size: 50% !important;
+    }
+
+    .combo__save-list {
+        width: 100%;
+        padding: 0 0 16px 0;
+    }
+
+    .combo__save-item-parent{
+        width: 100%;
+    }
+
+    .button-moveup {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .button-moveup i {
+        font-size: 4rem !important;
+        color: #adc3f8;
+    }
+
+    .combo__save-item .address-star{
+        font-size: 2.5rem;
+    }
+
+    .combo__save-item .title {
+        font-size: 2.6rem;
+    }
+
+    .combo__save-item .service p {
+        font-size: 2rem;
+    }
+
+    .combo__save-item .time-price {
+        font-size: 2rem;
+    }
+
+    .combo__save-item .time-price p:last-child {
+        font-size: 2.2rem;
+    }
+
+    .btn_combosave {
+        font-size: 2.4rem;
+    }
+}
