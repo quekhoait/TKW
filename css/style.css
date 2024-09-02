@@ -1367,7 +1367,7 @@ footer{
 
     .form__find-information ul li .input_point {
         display: flex;
-        padding: 16px 4px 16px 8px;
+        padding: 16px 4px 16px 6px;
     }
     
     .form__find-information ul li .input_point p {
