@@ -22,7 +22,7 @@ input{
 }
 
 .container__contact-navmenu{
-    background-image: url("/img/contact/bgr-contact3.jpg");
+    background-image: url("../img/contact/bgr-contact3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -54,7 +54,7 @@ input{
 .container__contact-navmenu .form-contact{
     width: 60%;
     display: flex;
-    background-image: url("/img/contact/bgr-contact3.jpg");
+    background-image: url("../img/contact/bgr-contact3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;

@@ -13,7 +13,7 @@ aside{
 }
 
 .head-insurance{
-    background-image: url('/img/insurance/bgr.webp');
+    background-image: url('../img/insurance/bgr.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
