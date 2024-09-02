@@ -97,7 +97,7 @@ twoWayBtn.addEventListener('change', checkWay);
 
 //phàn xem tỉnh thành
 let inputProvince = document.querySelectorAll('.form__find-information>ul.input-province .input_point')
-let provinceModel = document.querySelectorAll('.form__find-information > ul li .input_point ul.province')
+let provinceModel = document.querySelectorAll('.form__find-information > ul.input-province ul.province')
 
 
 
@@ -106,19 +106,20 @@ function clickInputProvince(){
          inputProvince[i].onclick = function(){
         provinceModel[i].style.display = 'block';
         }
-    }  
-    
-    document.addEventListener('click', function(event) {
-        for(let i=0; i<provinceModel.length; i++){
-            if (!inputProvince[i].contains(event.target) ) {
-                provinceModel[i].style.display = 'none';
-            }
-        }
-    }); 
+    }   
 }
 
+document.addEventListener('click', function(event) {
+    for(let i=0; i<inputProvince.length; i++){
+        if (!inputProvince[i].contains(event.target) ) {
+            provinceModel[i].style.display = 'none';
+        }
+    }
+})
 
 clickInputProvince();
+
+; 
 
 //Dổi gí tri các ô
 

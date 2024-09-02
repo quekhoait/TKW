@@ -568,7 +568,7 @@ main .form__find-information i.fa-caret-down{
     left: 0;
 }
 
-.form__find-information > ul.input-province li .input_point ul.province{
+.form__find-information > ul.input-province ul.province{
     position: absolute;
     top: 110%;
     width: 90%;
@@ -584,11 +584,11 @@ main .form__find-information i.fa-caret-down{
     padding: 0;
 }
 
-.form__find-information > ul.input-province li .input_point ul.province li{
+.form__find-information > ul.input-province ul.province li{
     padding: 4px 8px;
 }
 
-.form__find-information > ul.input-province li .input_point ul.province li:hover{
+.form__find-information > ul.input-province ul.province li:hover{
     background-color: var(--hover-menu);
     color: var(--white-color);
 }
@@ -1392,12 +1392,16 @@ footer{
         line-height: 40px;
     }
 
-    .form__find-information > ul.input-province li .input_point ul.province{
+    .form__find-information > ul.input-province ul.province{
         width: 90% !important;
     }
 
-    .form__find-information > ul.input-province li .input_point ul.province li {
+    .form__find-information > ul.input-province ul.province li {
         font-size: 2.2rem;
+    }
+
+    .form__find-information > ul.input-province ul.province li:first-child{
+        padding-top: 8px;
     }
 
     .form__find-information ul {
@@ -1450,7 +1454,7 @@ footer{
 
     /* Lịch */
     .table_calendar{
-        padding: 0 4px 8px 4px !important;
+        padding: 0 12px 8px !important;
     }
 
     .form__date-title{
@@ -1584,5 +1588,10 @@ footer{
 
     .quality__item-content p:nth-child(3) {
         font-size: 2.6rem;
+    }
+
+    .button-moveup {
+        width: 50px !important; 
+        height: 50px !important;
     }
 }
