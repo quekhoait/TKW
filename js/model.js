@@ -80,7 +80,8 @@ btnLayoutRegis.addEventListener('click', function(){
         setTimeout(function(){        
             passwordRetype.style.display = 'none';
             titleLogin.innerText = 'Sign In';
-            formRegis.querySelector('.btn button').innerText = 'Sign In'
+            formRegis.querySelector('.btn button').innerText = 'Sign In';
+             label.innerHTML = '<a>Quên mật khẩu?</a>'
         },250)     
 })
 
@@ -89,7 +90,7 @@ btnLayoutRegis.addEventListener('click', function(){
 let btnLogin = document.querySelectorAll('header ul.head_right li:nth-child(2)');
 //Lấy model menu
 let modelMenu = document.querySelector('.model_menu');
-
+let label = document.querySelector('.form__regis-login .form__input-children .lable ');
 function loginForm(){
     for(let i=0; i<btnLogin.length; i++){
         btnLogin[i].onclick = function(){
@@ -99,6 +100,7 @@ function loginForm(){
             formRegis.querySelector('.btn button').innerText = 'Sign In'
             modelHome.style.display = 'flex';
             modelMenu.style.display = 'none';
+            label.innerHTML = '<a>Quên mật khẩu?</a>'
         }
     }
 }
@@ -134,7 +136,9 @@ btnLayoutLogin.addEventListener('click', function(){
     setTimeout(function(){    
         passwordRetype.style.display = 'block';
         titleLogin.innerText = 'Create Account';
-        formRegis.querySelector('.btn button').innerText = 'SigUp'
+        formRegis.querySelector('.btn button').innerText = 'SigUp';
+         label.innerHTML = '<p>Bằng việc đăng kí, bạn đã đồng ý với <br> <a href="#">Điều khoản</a> &<a href="#">Chính sách của chúng tôi</a> </p>'
+                                   
     },250)
    resetForm();
 })
@@ -213,6 +217,7 @@ function formLoginMobile(){
     retypePaswordMobile.style.display = 'none';
     document.querySelector('.model__home-mobile .btn button').innerText  = 'SigIn'
     document.querySelector('.model__home-mobile .head-crossbar p').innerText = 'Đăng nhập';
+     document.querySelector('.model__home-mobile .form__input-children .lable').innerHTML =  '<a>Quên mật khẩu?</a>'
     document.querySelector('.form__footer-mobile .form-footer .content p').innerHTML =  ' Bạn chưa có tài khoản?'
     document.querySelector('.form__footer-mobile .form-footer .content a').innerHTML =  'Đăng ký'
 }
@@ -222,6 +227,10 @@ function formRegisMobile(){
     retypePaswordMobile.style.display = 'block';
     document.querySelector('.model__home-mobile .btn button').innerText  = 'Sig Up'
     document.querySelector('.model__home-mobile .head-crossbar p').innerText = 'Đăng Ký';
+         document.querySelector('.model__home-mobile .form__input-children .lable').innerHTML =  '<p>Bằng việc đăng kí, bạn đã đồng ý với <br><a href="#">Điều khoản</a> &<a href="#">Chính sách của chúng tôi</a> </p>' 
+                           
+                                
+                           
     document.querySelector('.form__footer-mobile .form-footer .content p').innerHTML =  ' Bạn đã có tài khoản?'
     document.querySelector('.form__footer-mobile .form-footer .content a').innerHTML =  'Đăng nhập'
 }

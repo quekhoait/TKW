@@ -33,6 +33,10 @@ aside{
     align-items: center;
 }
 
+.search-box:focus-within{
+    border: 1px solid var(--primary-color);
+}
+
 .swap-btn {
     border: none;
     background: none;
@@ -58,6 +62,8 @@ aside{
     outline: none;
     width: 100%;
 }
+
+
 
 .input-prefix {
     padding: 0 32px 0 24px;

@@ -54,8 +54,13 @@ body{
     transform: translateY(-4px);
 }
 
+.combo__save-item .image{
+    height: 200px;
+}
+
 .combo__save-item img{
     width: 100%;
+    height: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }

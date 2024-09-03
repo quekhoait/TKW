@@ -50,6 +50,11 @@ aside{
     border-radius: 24px;
 }
 
+.search-box:focus-within{
+    border: 1px solid var(--primary-color);
+}
+
+
 .input-prefix {
     margin: 0 10px;
     display: flex;
