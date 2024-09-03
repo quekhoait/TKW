@@ -67,9 +67,7 @@ main .about_us .content_general .content > p:last-child{
     padding: 8px 0;
 }
 
-.about_us .content__web-editer .content-bgr .content ul li p{
-    font-weight: normal;
-}
+
 
 .about_us .content__web-editer .content-bgr ul{
     padding-left: 40px;
@@ -242,6 +240,10 @@ aside{
 
     .about_us .content__web-editer .content-bgr .content>p:nth-child(2) {
         font-size: 2.45rem;
+    }
+
+    .about_us .content__web-editer .content-bgr .content ul li p{
+        font-weight: 400 !important;
     }
 
     .about_us .content__web-editer .content-bgr{
