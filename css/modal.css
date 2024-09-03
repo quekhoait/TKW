@@ -467,8 +467,8 @@ main{
 }
 
 .table_calendar table tbody tr td:hover{
-    background-color: rgb(247, 193, 164);
-    color: var(--white-color);
+    background-color: rgb(247, 193, 164) !important;
+    /* color: var(--white-color); */
 }
 
 .table_calendar table tbody tr td span{
@@ -500,9 +500,12 @@ main{
 }
 
 .table_calendar table tbody tr:last-child td{
-    color: var(--gray-color);
+    color: var(--gray-color) !important;
     cursor: text;
+    pointer-events: none;
 }
+
+
 
 .table_calendar table tbody tr:last-child td:hover{
     background-color: var(--white-color);

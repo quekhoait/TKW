@@ -152,26 +152,53 @@ inputPoint.onclick = function(){
     dateBody1.style.display = 'block';    
 }
 
-
-
 document.addEventListener('click', function(event) {
-    if (!inputPoint.contains(event.target) && !dateBody1.contains(event.target)) {
+    if (!inputPoint.contains(event.target)) {
         dateBody1.style.display = 'none';
     }
 });
 
-let inputPoint2 = document.querySelector('ul.two_way .input_point');
+let inputPoint2 = document.querySelector('ul.two_way .input_point.time');
 let dateBody2 = document.querySelector('ul.two_way .form__date-body');
 inputPoint2.onclick = function(){   
     dateBody2.style.display = 'block';    
 }
 
 document.addEventListener('click', function(event) {
-    if (!inputPoint2.contains(event.target) && !dateBody2.contains(event.target)) {
+    if (!inputPoint2.contains(event.target)) {
         dateBody2.style.display = 'none';
     }
 });
 
+//chọn ngày
+let day1 = document.querySelectorAll('.form__find-information > ul:nth-child(3) .table_calendar tbody td');
+let day2 = document.querySelectorAll('.form__find-information > ul.two_way .table_calendar tbody td');
+let selectime1 = document.querySelector('.selected__time-item.one');
+let selectime2 = document.querySelector('.selected__time-item.two')
+
+function removeBgrDay(day){
+    for(let i=0; i<day.length; i++){
+        day[i].style.background = 'white';
+    }
+}
+
+function chooseDay(day1, input,selectime, daybgr ){
+    for(let i=0; i<day1.length; i++){
+        day1[i].addEventListener('click', function(){
+            removeBgrDay(daybgr);
+            if(day1[i].querySelector('p') !== null){
+                day1[i].style.background = 'rgb(244, 148, 148)';
+            }
+            let day =  day1[i].querySelector('p');
+            input.querySelector('p').innerText = `${day.innerText}/09/2024`;
+            selectime.innerText = `${day.innerText}/09/2024`;
+        })
+        
+    }
+}
+
+chooseDay(day1, inputPoint, selectime1,day1);
+chooseDay(day2, inputPoint2,selectime2, day2)
 
 
 //Khi click vào ô số lượng vé
