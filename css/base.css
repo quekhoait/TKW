@@ -24,6 +24,11 @@ html{
     color: var(--text-color);
 }
 
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
 
 h1{
     color: var(--text-color)
